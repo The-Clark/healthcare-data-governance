@@ -1,0 +1,462 @@
+{
+  "file_name": "patient_demographics.csv",
+  "validation_id": "c745d23d-5696-41bd-8213-c1c05901e819",
+  "validated_at": "2025-04-29 01:34:11",
+  "record_count": 100,
+  "column_count": 16,
+  "columns_validated": 12,
+  "column_results": [
+    {
+      "column": "created_at",
+      "rules_tested": [
+        "not_null",
+        "match_strftime_format"
+      ],
+      "rules_passed": [
+        "not_null",
+        "match_strftime_format"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "updated_at",
+      "rules_tested": [
+        "match_strftime_format"
+      ],
+      "rules_passed": [
+        "match_strftime_format"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "patient_id",
+      "rules_tested": [
+        "not_null",
+        "unique"
+      ],
+      "rules_passed": [
+        "not_null",
+        "unique"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "nhs_number",
+      "rules_tested": [
+        "not_null",
+        "unique",
+        "match_regex"
+      ],
+      "rules_passed": [
+        "not_null",
+        "unique",
+        "match_regex"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "first_name",
+      "rules_tested": [
+        "not_null",
+        "min_length"
+      ],
+      "rules_passed": [
+        "not_null",
+        "min_length"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "last_name",
+      "rules_tested": [
+        "not_null",
+        "min_length"
+      ],
+      "rules_passed": [
+        "not_null",
+        "min_length"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "date_of_birth",
+      "rules_tested": [
+        "not_null",
+        "match_regex"
+      ],
+      "rules_passed": [
+        "not_null",
+        "match_regex"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "gender",
+      "rules_tested": [
+        "not_null",
+        "in_list"
+      ],
+      "rules_passed": [
+        "not_null",
+        "in_list"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "postcode",
+      "rules_tested": [
+        "not_null",
+        "match_regex"
+      ],
+      "rules_passed": [
+        "not_null",
+        "match_regex"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "phone_number",
+      "rules_tested": [
+        "not_null"
+      ],
+      "rules_passed": [
+        "not_null"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "email",
+      "rules_tested": [
+        "match_regex"
+      ],
+      "rules_passed": [
+        "match_regex"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "blood_type",
+      "rules_tested": [
+        "in_list"
+      ],
+      "rules_passed": [
+        "in_list"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    }
+  ],
+  "data_profile": {
+    "file_name": "patient_demographics.csv",
+    "record_count": 100,
+    "column_count": 16,
+    "profiled_at": "2025-04-29 01:34:11",
+    "profile_id": "c6f05abc-a17e-4f80-8cfa-672ddc608fc1",
+    "columns": {
+      "patient_id": {
+        "data_type": "object",
+        "count": 100,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 100,
+        "unique_percentage": 100.0,
+        "min_length": 36,
+        "max_length": 36,
+        "mean_length": 36.0,
+        "frequent_values": {
+          "f53f25d8-9e7a-4334-ad65-44efb2a5751f": 1,
+          "80bfe1b5-ed64-47d7-b045-f8ccb4a68f29": 1,
+          "3694622e-8c79-4578-9631-75cb32638b5c": 1,
+          "8ceea46a-0a22-4c19-b71d-faa807ef69b2": 1,
+          "150a1e8e-8810-49a2-95aa-7ad143242b63": 1
+        }
+      },
+      "nhs_number": {
+        "data_type": "object",
+        "count": 100,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 100,
+        "unique_percentage": 100.0,
+        "min_length": 12,
+        "max_length": 12,
+        "mean_length": 12.0,
+        "frequent_values": {
+          "624-584-5043": 1,
+          "471-844-7060": 1,
+          "438-717-5443": 1,
+          "941-612-6494": 1,
+          "429-196-5591": 1
+        }
+      },
+      "first_name": {
+        "data_type": "object",
+        "count": 100,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 82,
+        "unique_percentage": 82.0,
+        "min_length": 3,
+        "max_length": 9,
+        "mean_length": 5.62,
+        "frequent_values": {
+          "Donna": 3,
+          "Geoffrey": 3,
+          "Mary": 2,
+          "Jade": 2,
+          "Mark": 2
+        }
+      },
+      "last_name": {
+        "data_type": "object",
+        "count": 100,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 81,
+        "unique_percentage": 81.0,
+        "min_length": 3,
+        "max_length": 10,
+        "mean_length": 6.05,
+        "frequent_values": {
+          "Smith": 6,
+          "Williams": 5,
+          "Jones": 3,
+          "Edwards": 2,
+          "Harris": 2
+        }
+      },
+      "date_of_birth": {
+        "data_type": "object",
+        "count": 100,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 100,
+        "unique_percentage": 100.0,
+        "min_length": 10,
+        "max_length": 10,
+        "mean_length": 10.0,
+        "frequent_values": {
+          "1948-05-02": 1,
+          "1956-12-04": 1,
+          "1997-01-05": 1,
+          "1944-09-19": 1,
+          "1993-05-03": 1
+        }
+      },
+      "gender": {
+        "data_type": "object",
+        "count": 100,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 2,
+        "unique_percentage": 2.0,
+        "min_length": 4,
+        "max_length": 6,
+        "mean_length": 4.98,
+        "frequent_values": {
+          "Male": 51,
+          "Female": 49
+        }
+      },
+      "address": {
+        "data_type": "object",
+        "count": 100,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 100,
+        "unique_percentage": 100.0,
+        "min_length": 29,
+        "max_length": 51,
+        "mean_length": 39.95,
+        "frequent_values": {
+          "17 Black light\nEast Shannonside\nBT7M 8PT": 1,
+          "564 Manning plain\nPort Eric\nW1W 4BG": 1,
+          "8 Paul ranch\nAliceshire\nG7 0RE": 1,
+          "901 Roberts mills\nEast Hazelville\nL1E 9GF": 1,
+          "Flat 64\nTomlinson plains\nMelissamouth\nPL4 0QB": 1
+        }
+      },
+      "postcode": {
+        "data_type": "object",
+        "count": 100,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 100,
+        "unique_percentage": 100.0,
+        "min_length": 6,
+        "max_length": 8,
+        "mean_length": 7.23,
+        "frequent_values": {
+          "B7T 5SR": 1,
+          "B05 7HJ": 1,
+          "S2 1NN": 1,
+          "IV51 6AN": 1,
+          "B8 3BU": 1
+        }
+      },
+      "phone_number": {
+        "data_type": "object",
+        "count": 100,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 100,
+        "unique_percentage": 100.0,
+        "min_length": 10,
+        "max_length": 18,
+        "mean_length": 14.48,
+        "frequent_values": {
+          "+44(0)118 4960100": 1,
+          "+44118 496 0973": 1,
+          "+44(0)1414960619": 1,
+          "(0117) 496 0647": 1,
+          "+44(0)121 4960774": 1
+        }
+      },
+      "email": {
+        "data_type": "object",
+        "count": 100,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 100,
+        "unique_percentage": 100.0,
+        "min_length": 16,
+        "max_length": 29,
+        "mean_length": 21.69,
+        "frequent_values": {
+          "samuel27@example.net": 1,
+          "dgreen@example.net": 1,
+          "jcox@example.org": 1,
+          "edwardsheather@example.net": 1,
+          "idawson@example.org": 1
+        }
+      },
+      "blood_type": {
+        "data_type": "object",
+        "count": 100,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 8,
+        "unique_percentage": 8.0,
+        "min_length": 2,
+        "max_length": 3,
+        "mean_length": 2.15,
+        "frequent_values": {
+          "B+": 20,
+          "A+": 18,
+          "B-": 15,
+          "O+": 12,
+          "A-": 11
+        }
+      },
+      "registered_gp": {
+        "data_type": "object",
+        "count": 100,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 100,
+        "unique_percentage": 100.0,
+        "min_length": 12,
+        "max_length": 27,
+        "mean_length": 17.73,
+        "frequent_values": {
+          "Dr Mohammed Jones MD": 1,
+          "Louise Kaur MD": 1,
+          "Christine Thomas MD": 1,
+          "Ms Frances Wright MD": 1,
+          "Mr Anthony King MD": 1
+        }
+      },
+      "emergency_contact": {
+        "data_type": "object",
+        "count": 100,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 100,
+        "unique_percentage": 100.0,
+        "min_length": 9,
+        "max_length": 24,
+        "mean_length": 14.6,
+        "frequent_values": {
+          "Martyn Patel": 1,
+          "Barry Byrne": 1,
+          "Rhys Nelson": 1,
+          "Marilyn Murray": 1,
+          "Sam White": 1
+        }
+      },
+      "emergency_contact_phone": {
+        "data_type": "object",
+        "count": 100,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 100,
+        "unique_percentage": 100.0,
+        "min_length": 11,
+        "max_length": 18,
+        "mean_length": 14.21,
+        "frequent_values": {
+          "+44121 4960912": 1,
+          "+44(0)1144960674": 1,
+          "+44151 496 0211": 1,
+          "+44(0)29 2018521": 1,
+          "(0191) 4960246": 1
+        }
+      },
+      "created_at": {
+        "data_type": "object",
+        "count": 100,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 1,
+        "unique_percentage": 1.0,
+        "min_length": 19,
+        "max_length": 19,
+        "mean_length": 19.0,
+        "frequent_values": {
+          "2025-04-29 00:50:57": 100
+        }
+      },
+      "updated_at": {
+        "data_type": "object",
+        "count": 100,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 1,
+        "unique_percentage": 1.0,
+        "min_length": 19,
+        "max_length": 19,
+        "mean_length": 19.0,
+        "frequent_values": {
+          "2025-04-29 00:50:57": 100
+        }
+      }
+    }
+  },
+  "quality_score": {
+    "overall_score": 100.0,
+    "dimension_scores": {
+      "completeness": 100.0,
+      "validity": 100.0,
+      "uniqueness": 100.0,
+      "consistency": 100.0
+    },
+    "score_interpretation": "Excellent - Data meets the highest quality standards",
+    "weighted_dimensions": {
+      "completeness": 0.4,
+      "validity": 0.3,
+      "uniqueness": 0.15,
+      "consistency": 0.15
+    }
+  }
+}

@@ -1,0 +1,170 @@
+[
+  {
+    "source_dataset": "patient_demographics",
+    "relationship_type": "primary",
+    "target_dataset": "patient_medical_records",
+    "joining_fields": [
+      "patient_id",
+      "nhs_number"
+    ],
+    "description": "Patient demographics are the primary reference for medical records",
+    "detection_method": "standard"
+  },
+  {
+    "source_dataset": "patient_demographics",
+    "relationship_type": "primary",
+    "target_dataset": "patient_lab_results",
+    "joining_fields": [
+      "patient_id",
+      "nhs_number"
+    ],
+    "description": "Patient demographics are the primary reference for lab results",
+    "detection_method": "standard"
+  },
+  {
+    "source_dataset": "patient_demographics",
+    "relationship_type": "primary",
+    "target_dataset": "patient_consent_records",
+    "joining_fields": [
+      "patient_id",
+      "nhs_number"
+    ],
+    "description": "Patient demographics are the primary reference for consent records",
+    "detection_method": "standard"
+  },
+  {
+    "source_dataset": "patient_medical_records",
+    "relationship_type": "primary",
+    "target_dataset": "patient_lab_results",
+    "joining_fields": [
+      "record_id"
+    ],
+    "description": "Medical records are the primary reference for associated lab results",
+    "detection_method": "standard"
+  },
+  {
+    "source_dataset": "nhs_staff_records",
+    "relationship_type": "referenced_by",
+    "target_dataset": "data_access_audit_logs",
+    "joining_fields": [
+      "staff_id"
+    ],
+    "description": "Staff records are referenced by audit logs for access tracking",
+    "detection_method": "standard"
+  },
+  {
+    "source_dataset": "nhs_staff_records",
+    "relationship_type": "referenced_by",
+    "target_dataset": "patient_demographics",
+    "joining_fields": [
+      "last_name",
+      "first_name"
+    ],
+    "description": "Detected relationship based on common fields: last_name, first_name",
+    "detection_method": "automatic"
+  },
+  {
+    "source_dataset": "nhs_staff_records",
+    "relationship_type": "referenced_by",
+    "target_dataset": "patient_medical_records",
+    "joining_fields": [
+      "trust_name"
+    ],
+    "description": "Detected relationship based on common fields: trust_name",
+    "detection_method": "automatic"
+  },
+  {
+    "source_dataset": "patient_consent_records",
+    "relationship_type": "primary",
+    "target_dataset": "patient_demographics",
+    "joining_fields": [
+      "nhs_number",
+      "patient_id"
+    ],
+    "description": "Detected relationship based on common fields: nhs_number, patient_id",
+    "detection_method": "automatic"
+  },
+  {
+    "source_dataset": "data_access_audit_logs",
+    "relationship_type": "primary",
+    "target_dataset": "nhs_staff_records",
+    "joining_fields": [
+      "staff_id"
+    ],
+    "description": "Detected relationship based on common fields: staff_id",
+    "detection_method": "automatic"
+  },
+  {
+    "source_dataset": "data_access_audit_logs",
+    "relationship_type": "referenced_by",
+    "target_dataset": "patient_demographics",
+    "joining_fields": [
+      "nhs_number"
+    ],
+    "description": "Detected relationship based on common fields: nhs_number",
+    "detection_method": "automatic"
+  },
+  {
+    "source_dataset": "patient_demographics",
+    "relationship_type": "primary",
+    "target_dataset": "nhs_staff_records",
+    "joining_fields": [
+      "last_name",
+      "first_name"
+    ],
+    "description": "Detected relationship based on common fields: last_name, first_name",
+    "detection_method": "automatic"
+  },
+  {
+    "source_dataset": "patient_demographics",
+    "relationship_type": "primary",
+    "target_dataset": "data_access_audit_logs",
+    "joining_fields": [
+      "nhs_number"
+    ],
+    "description": "Detected relationship based on common fields: nhs_number",
+    "detection_method": "automatic"
+  },
+  {
+    "source_dataset": "patient_medical_records",
+    "relationship_type": "primary",
+    "target_dataset": "nhs_staff_records",
+    "joining_fields": [
+      "trust_name"
+    ],
+    "description": "Detected relationship based on common fields: trust_name",
+    "detection_method": "automatic"
+  },
+  {
+    "source_dataset": "patient_medical_records",
+    "relationship_type": "primary",
+    "target_dataset": "patient_demographics",
+    "joining_fields": [
+      "nhs_number",
+      "patient_id"
+    ],
+    "description": "Detected relationship based on common fields: nhs_number, patient_id",
+    "detection_method": "automatic"
+  },
+  {
+    "source_dataset": "patient_lab_results",
+    "relationship_type": "referenced_by",
+    "target_dataset": "patient_demographics",
+    "joining_fields": [
+      "nhs_number",
+      "patient_id"
+    ],
+    "description": "Detected relationship based on common fields: nhs_number, patient_id",
+    "detection_method": "automatic"
+  },
+  {
+    "source_dataset": "patient_lab_results",
+    "relationship_type": "referenced_by",
+    "target_dataset": "patient_medical_records",
+    "joining_fields": [
+      "record_id"
+    ],
+    "description": "Detected relationship based on common fields: record_id",
+    "detection_method": "automatic"
+  }
+]

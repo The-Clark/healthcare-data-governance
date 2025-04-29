@@ -1,0 +1,23 @@
+graph TD
+    N0[patient_demographics]
+    N1[patient_medical_records]
+    N2[patient_lab_results]
+    N3[patient_consent_records]
+    N4[nhs_staff_records]
+    N5[data_access_audit_logs]
+    N0 ==>|patient_id, nhs_number| N1
+    N0 ==>|patient_id, nhs_number| N2
+    N0 ==>|patient_id, nhs_number| N3
+    N0 ==>|last_name, first_name| N4
+    N0 ==>|nhs_number| N5
+    N1 ==>|record_id| N2
+    N1 ==>|trust_name| N4
+    N1 ==>|nhs_number, patient_id| N0
+    N2 -.->-|nhs_number, patient_id| N0
+    N2 -.->-|record_id| N1
+    N3 ==>|nhs_number, patient_id| N0
+    N4 -.->-|staff_id| N5
+    N4 -.->-|last_name, first_name| N0
+    N4 -.->-|trust_name| N1
+    N5 ==>|staff_id| N4
+    N5 -.->-|nhs_number| N0

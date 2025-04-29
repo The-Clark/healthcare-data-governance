@@ -1,0 +1,11 @@
+staff_id,first_name,last_name,job_title,department,trust_name,nhs_email,phone_extension,start_date,access_level,created_at,updated_at
+c58dac46-9dc8-480b-8abe-02de65bc6f78,Alexandra,Bibi,Nurse,Psychiatry,Newcastle upon Tyne Hospitals NHS Foundation Trust,alexandra.bibi@nuth.nhs.uk,x4983,2024-09-27,Admin,2025-04-29 00:50:57,2025-04-29 00:50:57
+6dc32cc0-0346-4f3a-b289-28b3b4caa228,Dominic,Bond,Radiographer,Surgery,Newcastle upon Tyne Hospitals NHS Foundation Trust,dominic.bond@nuth.nhs.uk,x7445,2021-07-21,Standard,2025-04-29 00:50:57,2025-04-29 00:50:57
+16577a27-da14-481b-88f6-3530ada23ac3,Alison,Baker,Nurse,Psychiatry,University Hospitals Birmingham NHS Foundation Trust,alison.baker@hb.nhs.uk,x4218,2019-04-11,Admin,2025-04-29 00:50:57,2025-04-29 00:50:57
+1d5e89e7-61ac-4dad-b572-de6a62088f5c,Christopher,Kelly,Radiographer,Neurology,Manchester University NHS Foundation Trust,christopher.kelly@m.nhs.uk,x6905,2015-07-12,Standard,2025-04-29 00:50:57,2025-04-29 00:50:57
+d212daf3-b689-40e8-9643-a8b949792097,Connor,Fry,Consultant,Neurology,University College London Hospitals NHS Foundation Trust,connor.fry@clh.nhs.uk,x6912,2015-09-12,Basic,2025-04-29 00:50:57,2025-04-29 00:50:57
+deead945-ee6f-4318-83f7-3c84482a29fc,Scott,Morris,Receptionist,Obstetrics,Cambridge University Hospitals NHS Foundation Trust,scott.morris@ch.nhs.uk,x1399,2016-06-26,Admin,2025-04-29 00:50:57,2025-04-29 00:50:57
+db572e88-202c-4988-a12c-607d239df35b,Terence,Hopkins,Pharmacist,Pediatrics,London North West University Healthcare NHS Trust,terence.hopkins@lnwh.nhs.uk,x9763,2018-07-27,Elevated,2025-04-29 00:50:57,2025-04-29 00:50:57
+31785a8c-727f-4157-97e4-fab469560461,Scott,Mitchell,Consultant,Psychiatry,Newcastle upon Tyne Hospitals NHS Foundation Trust,scott.mitchell@nuth.nhs.uk,x1550,2019-04-16,Standard,2025-04-29 00:50:57,2025-04-29 00:50:57
+852bcb5e-708f-4d48-96d2-c19d3072a23d,Marilyn,Gray,Physiotherapist,Psychiatry,Manchester University NHS Foundation Trust,marilyn.gray@m.nhs.uk,x9106,2025-02-15,Admin,2025-04-29 00:50:57,2025-04-29 00:50:57
+3534af73-6adc-4a69-ba36-641e3aae2b17,Nicole,Ford,Nurse,Psychiatry,London North West University Healthcare NHS Trust,nicole.ford@lnwh.nhs.uk,x1678,2018-09-04,Standard,2025-04-29 00:50:57,2025-04-29 00:50:57

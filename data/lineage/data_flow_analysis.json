@@ -1,0 +1,234 @@
+{
+  "analysis_id": "32adb60c-fed1-41d9-8109-53190258292c",
+  "analysis_date": "2025-04-29 01:13:55",
+  "file_analyzed": "data_access_audit_logs.csv",
+  "total_access_events": 300,
+  "resource_types": {
+    "Patient Record": {
+      "access_count": 300,
+      "percentage": 100.0
+    }
+  },
+  "staff_access": {
+    "db572e88-202c-4988-a12c-607d239df35b": {
+      "staff_name": "Terence Hopkins",
+      "access_count": 42,
+      "percentage": 14.000000000000002
+    },
+    "852bcb5e-708f-4d48-96d2-c19d3072a23d": {
+      "staff_name": "Marilyn Gray",
+      "access_count": 35,
+      "percentage": 11.666666666666666
+    },
+    "6dc32cc0-0346-4f3a-b289-28b3b4caa228": {
+      "staff_name": "Dominic Bond",
+      "access_count": 32,
+      "percentage": 10.666666666666668
+    },
+    "d212daf3-b689-40e8-9643-a8b949792097": {
+      "staff_name": "Connor Fry",
+      "access_count": 32,
+      "percentage": 10.666666666666668
+    },
+    "deead945-ee6f-4318-83f7-3c84482a29fc": {
+      "staff_name": "Scott Morris",
+      "access_count": 31,
+      "percentage": 10.333333333333334
+    },
+    "16577a27-da14-481b-88f6-3530ada23ac3": {
+      "staff_name": "Alison Baker",
+      "access_count": 30,
+      "percentage": 10.0
+    },
+    "c58dac46-9dc8-480b-8abe-02de65bc6f78": {
+      "staff_name": "Alexandra Bibi",
+      "access_count": 29,
+      "percentage": 9.666666666666666
+    },
+    "1d5e89e7-61ac-4dad-b572-de6a62088f5c": {
+      "staff_name": "Christopher Kelly",
+      "access_count": 25,
+      "percentage": 8.333333333333332
+    },
+    "31785a8c-727f-4157-97e4-fab469560461": {
+      "staff_name": "Scott Mitchell",
+      "access_count": 25,
+      "percentage": 8.333333333333332
+    },
+    "3534af73-6adc-4a69-ba36-641e3aae2b17": {
+      "staff_name": "Nicole Ford",
+      "access_count": 19,
+      "percentage": 6.333333333333334
+    }
+  },
+  "temporal_patterns": {
+    "0": {
+      "access_count": 9,
+      "percentage": 3.0
+    },
+    "1": {
+      "access_count": 6,
+      "percentage": 2.0
+    },
+    "2": {
+      "access_count": 11,
+      "percentage": 3.6666666666666665
+    },
+    "3": {
+      "access_count": 22,
+      "percentage": 7.333333333333333
+    },
+    "4": {
+      "access_count": 13,
+      "percentage": 4.333333333333334
+    },
+    "5": {
+      "access_count": 16,
+      "percentage": 5.333333333333334
+    },
+    "6": {
+      "access_count": 11,
+      "percentage": 3.6666666666666665
+    },
+    "7": {
+      "access_count": 14,
+      "percentage": 4.666666666666667
+    },
+    "8": {
+      "access_count": 16,
+      "percentage": 5.333333333333334
+    },
+    "9": {
+      "access_count": 13,
+      "percentage": 4.333333333333334
+    },
+    "10": {
+      "access_count": 6,
+      "percentage": 2.0
+    },
+    "11": {
+      "access_count": 19,
+      "percentage": 6.333333333333334
+    },
+    "12": {
+      "access_count": 9,
+      "percentage": 3.0
+    },
+    "13": {
+      "access_count": 17,
+      "percentage": 5.666666666666666
+    },
+    "14": {
+      "access_count": 11,
+      "percentage": 3.6666666666666665
+    },
+    "15": {
+      "access_count": 11,
+      "percentage": 3.6666666666666665
+    },
+    "16": {
+      "access_count": 17,
+      "percentage": 5.666666666666666
+    },
+    "17": {
+      "access_count": 15,
+      "percentage": 5.0
+    },
+    "18": {
+      "access_count": 8,
+      "percentage": 2.666666666666667
+    },
+    "19": {
+      "access_count": 12,
+      "percentage": 4.0
+    },
+    "20": {
+      "access_count": 12,
+      "percentage": 4.0
+    },
+    "21": {
+      "access_count": 11,
+      "percentage": 3.6666666666666665
+    },
+    "22": {
+      "access_count": 11,
+      "percentage": 3.6666666666666665
+    },
+    "23": {
+      "access_count": 10,
+      "percentage": 3.3333333333333335
+    }
+  },
+  "access_paths": [
+    {
+      "path": [
+        "Schedule Appointment:Patient Record",
+        "View Test Results:Patient Record"
+      ],
+      "frequency": 8
+    },
+    {
+      "path": [
+        "View Patient Record:Patient Record",
+        "Cancel Appointment:Patient Record"
+      ],
+      "frequency": 7
+    },
+    {
+      "path": [
+        "View Patient Record:Patient Record",
+        "Prescribe Medication:Patient Record"
+      ],
+      "frequency": 7
+    },
+    {
+      "path": [
+        "Prescribe Medication:Patient Record",
+        "Update Patient Demographics:Patient Record"
+      ],
+      "frequency": 7
+    },
+    {
+      "path": [
+        "View Test Results:Patient Record",
+        "Update Patient Demographics:Patient Record"
+      ],
+      "frequency": 7
+    },
+    {
+      "path": [
+        "Edit Patient Consent:Patient Record",
+        "Add Medical Notes:Patient Record"
+      ],
+      "frequency": 7
+    },
+    {
+      "path": [
+        "Add Medical Notes:Patient Record",
+        "View Test Results:Patient Record"
+      ],
+      "frequency": 7
+    },
+    {
+      "path": [
+        "Update Patient Demographics:Patient Record",
+        "Prescribe Medication:Patient Record"
+      ],
+      "frequency": 7
+    },
+    {
+      "path": [
+        "Download Medical History:Patient Record",
+        "Schedule Appointment:Patient Record"
+      ],
+      "frequency": 6
+    },
+    {
+      "path": [
+        "Schedule Appointment:Patient Record",
+        "Cancel Appointment:Patient Record"
+      ],
+      "frequency": 6
+    }
+  ]
+}

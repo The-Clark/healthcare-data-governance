@@ -1,0 +1,37 @@
+{
+  "assessment_id": "14543d38-d0cc-4d31-893d-931fca8d01df",
+  "assessment_date": "2025-04-29 01:11:59",
+  "assessment_name": "NHS Data Governance GDPR Compliance Assessment",
+  "assessment_version": "1.0",
+  "components": {
+    "consent_management": {
+      "status": "Compliant",
+      "details": "Assessment of consent records and management practices"
+    },
+    "data_protection_impact": {
+      "status": "Compliant",
+      "details": "Data Protection Impact Assessment for processing activities"
+    },
+    "access_controls": {
+      "status": "Non-Compliant",
+      "details": "Assessment of data access patterns and security"
+    },
+    "privacy_information": {
+      "status": "Compliant",
+      "details": "Privacy notice creation and information management"
+    }
+  },
+  "overall_status": "Non-Compliant",
+  "key_findings": [
+    "Access Controls requires immediate attention"
+  ],
+  "recommendations": [
+    "Review consent collection process for: Contact for Clinical Trials, Receive Health Newsletters, Share Data with Other NHS Trusts.",
+    "Implement regular compliance monitoring",
+    "Conduct annual DPIA reviews",
+    "Maintain comprehensive audit trails",
+    "Ensure staff receive regular data protection training",
+    "Investigate 22 unauthorized access attempts and implement stricter access controls.",
+    "Review 82 access attempts during late hours (10 PM - 5 AM) to ensure they are legitimate."
+  ]
+}

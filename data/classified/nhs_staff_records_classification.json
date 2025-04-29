@@ -1,0 +1,147 @@
+{
+  "file_name": "nhs_staff_records.csv",
+  "record_count": 10,
+  "column_count": 12,
+  "classified_at": "2025-04-29 01:34:15",
+  "classification_id": "3e3d7db2-d364-49cc-b599-88026a15739a",
+  "columns": [
+    {
+      "column_name": "staff_id",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": false,
+      "pii_types": [],
+      "classification": "INTERNAL",
+      "risk_score": 1,
+      "handling_requirements": "Can be shared with NHS staff but not externally"
+    },
+    {
+      "column_name": "first_name",
+      "is_pii": true,
+      "is_clinical": false,
+      "contains_pii": false,
+      "pii_types": [],
+      "classification": "CONFIDENTIAL",
+      "risk_score": 2,
+      "handling_requirements": "Access restricted to authorized personnel with legitimate need"
+    },
+    {
+      "column_name": "last_name",
+      "is_pii": true,
+      "is_clinical": false,
+      "contains_pii": false,
+      "pii_types": [],
+      "classification": "CONFIDENTIAL",
+      "risk_score": 2,
+      "handling_requirements": "Access restricted to authorized personnel with legitimate need"
+    },
+    {
+      "column_name": "job_title",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": false,
+      "pii_types": [],
+      "classification": "PUBLIC",
+      "risk_score": 0,
+      "handling_requirements": "No special handling required"
+    },
+    {
+      "column_name": "department",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": false,
+      "pii_types": [],
+      "classification": "INTERNAL",
+      "risk_score": 1,
+      "handling_requirements": "Can be shared with NHS staff but not externally"
+    },
+    {
+      "column_name": "trust_name",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": false,
+      "pii_types": [],
+      "classification": "INTERNAL",
+      "risk_score": 1,
+      "handling_requirements": "Can be shared with NHS staff but not externally"
+    },
+    {
+      "column_name": "nhs_email",
+      "is_pii": true,
+      "is_clinical": false,
+      "contains_pii": true,
+      "pii_types": [
+        "email"
+      ],
+      "classification": "RESTRICTED",
+      "risk_score": 3,
+      "handling_requirements": "Strict access controls, encryption required, audit logging mandatory"
+    },
+    {
+      "column_name": "phone_extension",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": false,
+      "pii_types": [],
+      "classification": "PUBLIC",
+      "risk_score": 0,
+      "handling_requirements": "No special handling required"
+    },
+    {
+      "column_name": "start_date",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": true,
+      "pii_types": [
+        "date"
+      ],
+      "classification": "CONFIDENTIAL",
+      "risk_score": 2,
+      "handling_requirements": "Access restricted to authorized personnel with legitimate need"
+    },
+    {
+      "column_name": "access_level",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": false,
+      "pii_types": [],
+      "classification": "PUBLIC",
+      "risk_score": 0,
+      "handling_requirements": "No special handling required"
+    },
+    {
+      "column_name": "created_at",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": true,
+      "pii_types": [
+        "date"
+      ],
+      "classification": "CONFIDENTIAL",
+      "risk_score": 2,
+      "handling_requirements": "Access restricted to authorized personnel with legitimate need"
+    },
+    {
+      "column_name": "updated_at",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": true,
+      "pii_types": [
+        "date"
+      ],
+      "classification": "CONFIDENTIAL",
+      "risk_score": 2,
+      "handling_requirements": "Access restricted to authorized personnel with legitimate need"
+    }
+  ],
+  "overall_classification": "RESTRICTED",
+  "overall_risk_score": 3,
+  "handling_requirements": "Strict access controls, encryption required, audit logging mandatory",
+  "classification_counts": {
+    "INTERNAL": 3,
+    "CONFIDENTIAL": 5,
+    "PUBLIC": 3,
+    "RESTRICTED": 1
+  },
+  "pii_density": 50.0
+}

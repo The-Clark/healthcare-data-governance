@@ -1,0 +1,108 @@
+{
+  "dpia_id": "1a7d36ef-0476-41a4-951b-40e15f0c3428",
+  "created_date": "2025-04-29 01:11:59",
+  "system_name": "NHS Healthcare Data Governance Framework",
+  "dpo_name": "Data Protection Officer",
+  "processing_activities": {
+    "Collection of patient demographics": {
+      "description": "Collection of patient demographics",
+      "legal_basis": "Public task - Healthcare provision",
+      "data_types": "Patient demographic data",
+      "data_sensitivity": "Medium",
+      "data_volume": "Medium",
+      "data_subjects": "Vulnerable",
+      "initial_risk_level": "Medium",
+      "mitigating_measures": [
+        "Data minimization - only necessary data collected",
+        "Access controls based on roles and responsibilities",
+        "Data encryption in transit and at rest",
+        "Regular data quality checks",
+        "Audit trails for all data access",
+        "Staff training on data protection"
+      ],
+      "residual_risk": "Medium"
+    },
+    "Recording of medical history": {
+      "description": "Recording of medical history",
+      "legal_basis": "Public task - Healthcare provision",
+      "data_types": "Patient identifiable data, medical records",
+      "data_sensitivity": "High",
+      "data_volume": "Medium",
+      "data_subjects": "Standard",
+      "initial_risk_level": "Medium",
+      "mitigating_measures": [
+        "Data minimization - only necessary data collected",
+        "Access controls based on roles and responsibilities",
+        "Data encryption in transit and at rest",
+        "Regular data quality checks",
+        "Audit trails for all data access",
+        "Staff training on data protection"
+      ],
+      "residual_risk": "Medium"
+    },
+    "Processing of lab results": {
+      "description": "Processing of lab results",
+      "legal_basis": "Public task - Healthcare provision",
+      "data_types": "Patient demographic data",
+      "data_sensitivity": "High",
+      "data_volume": "Medium",
+      "data_subjects": "Standard",
+      "initial_risk_level": "Medium",
+      "mitigating_measures": [
+        "Data minimization - only necessary data collected",
+        "Access controls based on roles and responsibilities",
+        "Data encryption in transit and at rest",
+        "Regular data quality checks",
+        "Audit trails for all data access",
+        "Staff training on data protection"
+      ],
+      "residual_risk": "Medium"
+    },
+    "Sharing data with other NHS trusts": {
+      "description": "Sharing data with other NHS trusts",
+      "legal_basis": "Public task - Healthcare provision",
+      "data_types": "Patient demographic data",
+      "data_sensitivity": "Medium",
+      "data_volume": "Medium",
+      "data_subjects": "Standard",
+      "initial_risk_level": "Low",
+      "mitigating_measures": [
+        "Data minimization - only necessary data collected",
+        "Access controls based on roles and responsibilities",
+        "Data encryption in transit and at rest",
+        "Regular data quality checks",
+        "Audit trails for all data access",
+        "Staff training on data protection",
+        "Data sharing agreements with appropriate safeguards"
+      ],
+      "residual_risk": "Low"
+    },
+    "Research use of anonymized data": {
+      "description": "Research use of anonymized data",
+      "legal_basis": "Consent",
+      "data_types": "Patient demographic data",
+      "data_sensitivity": "Medium",
+      "data_volume": "High",
+      "data_subjects": "Standard",
+      "initial_risk_level": "Low",
+      "mitigating_measures": [
+        "Data minimization - only necessary data collected",
+        "Access controls based on roles and responsibilities",
+        "Data encryption in transit and at rest",
+        "Regular data quality checks",
+        "Audit trails for all data access",
+        "Staff training on data protection",
+        "Anonymization techniques applied before research use"
+      ],
+      "residual_risk": "Low"
+    }
+  },
+  "overall_risk_level": "Medium",
+  "approved": true,
+  "recommendations": [
+    "Implement regular compliance monitoring",
+    "Conduct annual DPIA reviews",
+    "Maintain comprehensive audit trails",
+    "Ensure staff receive regular data protection training"
+  ]
+}

@@ -1,0 +1,417 @@
+{
+  "file_name": "patient_medical_records.csv",
+  "validation_id": "f5f4cdaa-a875-48b1-ba0f-38593d5efa24",
+  "validated_at": "2025-04-29 01:34:11",
+  "record_count": 281,
+  "column_count": 15,
+  "columns_validated": 10,
+  "column_results": [
+    {
+      "column": "created_at",
+      "rules_tested": [
+        "not_null",
+        "match_strftime_format"
+      ],
+      "rules_passed": [
+        "not_null",
+        "match_strftime_format"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "updated_at",
+      "rules_tested": [
+        "match_strftime_format"
+      ],
+      "rules_passed": [
+        "match_strftime_format"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "record_id",
+      "rules_tested": [
+        "not_null",
+        "unique"
+      ],
+      "rules_passed": [
+        "not_null",
+        "unique"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "patient_id",
+      "rules_tested": [
+        "not_null"
+      ],
+      "rules_passed": [
+        "not_null"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "nhs_number",
+      "rules_tested": [
+        "not_null",
+        "match_regex"
+      ],
+      "rules_passed": [
+        "not_null",
+        "match_regex"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "visit_date",
+      "rules_tested": [
+        "not_null",
+        "match_strftime_format"
+      ],
+      "rules_passed": [
+        "not_null",
+        "match_strftime_format"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "trust_name",
+      "rules_tested": [
+        "not_null"
+      ],
+      "rules_passed": [
+        "not_null"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "department",
+      "rules_tested": [
+        "not_null"
+      ],
+      "rules_passed": [
+        "not_null"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "primary_diagnosis",
+      "rules_tested": [
+        "not_null"
+      ],
+      "rules_passed": [],
+      "rules_failed": [
+        {
+          "rule": "not_null",
+          "unexpected_count": 23,
+          "unexpected_percent": 8.185053380782918
+        }
+      ],
+      "pass_percentage": 0.0
+    },
+    {
+      "column": "attending_physician",
+      "rules_tested": [
+        "not_null"
+      ],
+      "rules_passed": [
+        "not_null"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    }
+  ],
+  "data_profile": {
+    "file_name": "patient_medical_records.csv",
+    "record_count": 281,
+    "column_count": 15,
+    "profiled_at": "2025-04-29 01:34:11",
+    "profile_id": "4c487a21-8b11-43f4-b33e-d215ef667928",
+    "columns": {
+      "record_id": {
+        "data_type": "object",
+        "count": 281,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 281,
+        "unique_percentage": 100.0,
+        "min_length": 36,
+        "max_length": 36,
+        "mean_length": 36.0,
+        "frequent_values": {
+          "c2c9616e-7fb8-4642-ac6c-a8e99c1de3c0": 1,
+          "99a071a1-e644-4d37-8c1c-6b3d7bb082dc": 1,
+          "6dc4b224-547b-45ed-946d-94fd0d4b8b36": 1,
+          "b4960020-20f4-4f69-b828-17f030a8d2b6": 1,
+          "207c469a-c29f-4b43-84b7-2ecbb1e03c3a": 1
+        }
+      },
+      "patient_id": {
+        "data_type": "object",
+        "count": 281,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 100,
+        "unique_percentage": 35.587188612099645,
+        "min_length": 36,
+        "max_length": 36,
+        "mean_length": 36.0,
+        "frequent_values": {
+          "f53f25d8-9e7a-4334-ad65-44efb2a5751f": 5,
+          "68ea3a22-4f62-490c-aef9-47f347d48367": 5,
+          "2a5e0544-f7bb-4f32-8117-351224171333": 5,
+          "7c31e23d-eae7-4885-a5cd-48145bbb6169": 5,
+          "b513eabe-aada-4ca5-9eac-ce45ad77f35f": 5
+        }
+      },
+      "nhs_number": {
+        "data_type": "object",
+        "count": 281,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 100,
+        "unique_percentage": 35.587188612099645,
+        "min_length": 12,
+        "max_length": 12,
+        "mean_length": 12.0,
+        "frequent_values": {
+          "624-584-5043": 5,
+          "503-528-6966": 5,
+          "912-669-3119": 5,
+          "449-700-1006": 5,
+          "410-355-6753": 5
+        }
+      },
+      "visit_date": {
+        "data_type": "object",
+        "count": 281,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 249,
+        "unique_percentage": 88.61209964412812,
+        "min_length": 10,
+        "max_length": 10,
+        "mean_length": 10.0,
+        "frequent_values": {
+          "2024-09-15": 3,
+          "2023-12-15": 3,
+          "2024-05-25": 3,
+          "2022-09-01": 3,
+          "2022-08-08": 2
+        }
+      },
+      "trust_name": {
+        "data_type": "object",
+        "count": 281,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 9,
+        "unique_percentage": 3.202846975088968,
+        "min_length": 34,
+        "max_length": 56,
+        "mean_length": 47.01779359430605,
+        "frequent_values": {
+          "London North West University Healthcare NHS Trust": 38,
+          "University Hospitals Birmingham NHS Foundation Trust": 37,
+          "Manchester University NHS Foundation Trust": 34,
+          "Leeds Teaching Hospitals NHS Trust": 32,
+          "Oxford University Hospitals NHS Foundation Trust": 32
+        }
+      },
+      "department": {
+        "data_type": "object",
+        "count": 281,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 12,
+        "unique_percentage": 4.270462633451958,
+        "min_length": 7,
+        "max_length": 14,
+        "mean_length": 9.711743772241993,
+        "frequent_values": {
+          "Surgery": 31,
+          "Pediatrics": 31,
+          "Gynecology": 27,
+          "Cardiology": 26,
+          "Emergency Care": 25
+        }
+      },
+      "primary_diagnosis": {
+        "data_type": "object",
+        "count": 281,
+        "null_count": 23,
+        "null_percentage": 8.185053380782918,
+        "unique_count": 12,
+        "unique_percentage": 4.270462633451958,
+        "min_length": 3,
+        "max_length": 23,
+        "mean_length": 11.373665480427047,
+        "frequent_values": {
+          "COPD": 27,
+          "Type 2 Diabetes": 27,
+          "Coronary Artery Disease": 24,
+          "Depression": 22,
+          "Chronic Kidney Disease": 22
+        }
+      },
+      "secondary_diagnosis": {
+        "data_type": "object",
+        "count": 281,
+        "null_count": 145,
+        "null_percentage": 51.60142348754449,
+        "unique_count": 12,
+        "unique_percentage": 4.270462633451958,
+        "min_length": 3,
+        "max_length": 23,
+        "mean_length": 7.099644128113879,
+        "frequent_values": {
+          "Asthma": 16,
+          "Arthritis": 15,
+          "Hypertension": 13,
+          "Obesity": 12,
+          "Chronic Kidney Disease": 12
+        }
+      },
+      "notes": {
+        "data_type": "object",
+        "count": 281,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 163,
+        "unique_percentage": 58.00711743772242,
+        "min_length": 84,
+        "max_length": 154,
+        "mean_length": 106.84341637010677,
+        "frequent_values": {
+          "Emergency admission for acute Type 2 Diabetes. Patient stabilized and admitted for observation.": 9,
+          "Emergency admission for acute COPD. Patient stabilized and admitted for observation.": 8,
+          "Emergency admission for acute None. Patient stabilized and admitted for observation.": 7,
+          "Routine check-up. Patient diagnosed with Hypertension. Lab work ordered to monitor condition.": 7,
+          "Routine check-up. Patient diagnosed with Arthritis. Lab work ordered to monitor condition.": 7
+        }
+      },
+      "attending_physician": {
+        "data_type": "object",
+        "count": 281,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 281,
+        "unique_percentage": 100.0,
+        "min_length": 11,
+        "max_length": 29,
+        "mean_length": 17.75800711743772,
+        "frequent_values": {
+          "Clare Begum MD": 1,
+          "Mr Elliott Poole MD": 1,
+          "Ms Aimee Morris MD": 1,
+          "Mrs Rosemary Evans MD": 1,
+          "Zoe Robinson MD": 1
+        }
+      },
+      "medication_prescribed": {
+        "data_type": "object",
+        "count": 281,
+        "null_count": 24,
+        "null_percentage": 8.540925266903916,
+        "unique_count": 12,
+        "unique_percentage": 4.270462633451958,
+        "min_length": 3,
+        "max_length": 13,
+        "mean_length": 9.195729537366548,
+        "frequent_values": {
+          "Aspirin": 28,
+          "Amlodipine": 26,
+          "Metformin": 25,
+          "Lisinopril": 24,
+          "Sertraline": 24
+        }
+      },
+      "follow_up_required": {
+        "data_type": "bool",
+        "count": 281,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 2,
+        "unique_percentage": 0.7117437722419928
+      },
+      "follow_up_date": {
+        "data_type": "object",
+        "count": 281,
+        "null_count": 134,
+        "null_percentage": 47.686832740213525,
+        "unique_count": 137,
+        "unique_percentage": 48.754448398576514,
+        "min_length": 3,
+        "max_length": 10,
+        "mean_length": 6.661921708185053,
+        "frequent_values": {
+          "2022-07-29": 3,
+          "2022-09-13": 2,
+          "2024-12-21": 2,
+          "2024-03-27": 2,
+          "2023-11-25": 2
+        }
+      },
+      "created_at": {
+        "data_type": "object",
+        "count": 281,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 249,
+        "unique_percentage": 88.61209964412812,
+        "min_length": 19,
+        "max_length": 19,
+        "mean_length": 19.0,
+        "frequent_values": {
+          "2024-09-15 00:00:00": 3,
+          "2023-12-15 00:00:00": 3,
+          "2024-05-25 00:00:00": 3,
+          "2022-09-01 00:00:00": 3,
+          "2022-08-08 00:00:00": 2
+        }
+      },
+      "updated_at": {
+        "data_type": "object",
+        "count": 281,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 249,
+        "unique_percentage": 88.61209964412812,
+        "min_length": 19,
+        "max_length": 19,
+        "mean_length": 19.0,
+        "frequent_values": {
+          "2024-09-15 00:00:00": 3,
+          "2023-12-15 00:00:00": 3,
+          "2024-05-25 00:00:00": 3,
+          "2022-09-01 00:00:00": 3,
+          "2022-08-08 00:00:00": 2
+        }
+      }
+    }
+  },
+  "quality_score": {
+    "overall_score": 94.77124183006536,
+    "dimension_scores": {
+      "completeness": 88.88888888888889,
+      "validity": 100.0,
+      "uniqueness": 100.0,
+      "consistency": null
+    },
+    "score_interpretation": "Good - Data is reliable with minor quality issues",
+    "weighted_dimensions": {
+      "completeness": 0.4,
+      "validity": 0.3,
+      "uniqueness": 0.15,
+      "consistency": 0.15
+    }
+  }
+}

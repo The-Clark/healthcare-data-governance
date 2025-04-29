@@ -1,0 +1,45 @@
+{
+  "report_id": "8a6e1ff5-7aaf-40a2-bf80-65b45254b3b1",
+  "report_date": "2025-04-29 01:11:59",
+  "file_analyzed": "patient_consent_records.csv",
+  "total_consent_records": 500,
+  "unique_patients": 100,
+  "consent_by_type": {
+    "Contact for Clinical Trials": {
+      "consented": 44,
+      "declined": 56,
+      "total": 100,
+      "consent_rate": 44.0
+    },
+    "Data Processing for Medical Care": {
+      "consented": 86,
+      "declined": 14,
+      "total": 100,
+      "consent_rate": 86.0
+    },
+    "Receive Health Newsletters": {
+      "consented": 49,
+      "declined": 51,
+      "total": 100,
+      "consent_rate": 49.0
+    },
+    "Research Use of Anonymized Data": {
+      "consented": 54,
+      "declined": 46,
+      "total": 100,
+      "consent_rate": 54.0
+    },
+    "Share Data with Other NHS Trusts": {
+      "consented": 48,
+      "declined": 52,
+      "total": 100,
+      "consent_rate": 48.0
+    }
+  },
+  "expired_consent_records": 0,
+  "expired_percentage": 0.0,
+  "compliance_status": "Compliant",
+  "recommendations": [
+    "Review consent collection process for: Contact for Clinical Trials, Receive Health Newsletters, Share Data with Other NHS Trusts."
+  ]
+}

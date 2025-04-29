@@ -1,0 +1,290 @@
+{
+  "analysis_id": "3b7a8b55-e4a8-4aeb-8696-01c1dd61f142",
+  "analysis_date": "2025-04-29 01:13:55",
+  "dataset": "patient_demographics",
+  "downstream_dependencies": 5,
+  "upstream_dependencies": 5,
+  "downstream_datasets": [
+    {
+      "dataset": "patient_medical_records",
+      "path": [
+        "patient_demographics",
+        "patient_medical_records"
+      ],
+      "edges": [
+        {
+          "source": "patient_demographics",
+          "target": "patient_medical_records",
+          "relationship": "primary",
+          "joining_fields": [
+            "patient_id",
+            "nhs_number"
+          ]
+        }
+      ],
+      "distance": 1,
+      "impact_level": "High"
+    },
+    {
+      "dataset": "nhs_staff_records",
+      "path": [
+        "patient_demographics",
+        "patient_medical_records",
+        "nhs_staff_records"
+      ],
+      "edges": [
+        {
+          "source": "patient_demographics",
+          "target": "patient_medical_records",
+          "relationship": "primary",
+          "joining_fields": [
+            "patient_id",
+            "nhs_number"
+          ]
+        },
+        {
+          "source": "patient_medical_records",
+          "target": "nhs_staff_records",
+          "relationship": "primary",
+          "joining_fields": [
+            "trust_name"
+          ]
+        }
+      ],
+      "distance": 2,
+      "impact_level": "Medium"
+    },
+    {
+      "dataset": "data_access_audit_logs",
+      "path": [
+        "patient_demographics",
+        "patient_medical_records",
+        "nhs_staff_records",
+        "data_access_audit_logs"
+      ],
+      "edges": [
+        {
+          "source": "patient_demographics",
+          "target": "patient_medical_records",
+          "relationship": "primary",
+          "joining_fields": [
+            "patient_id",
+            "nhs_number"
+          ]
+        },
+        {
+          "source": "patient_medical_records",
+          "target": "nhs_staff_records",
+          "relationship": "primary",
+          "joining_fields": [
+            "trust_name"
+          ]
+        },
+        {
+          "source": "nhs_staff_records",
+          "target": "data_access_audit_logs",
+          "relationship": "referenced_by",
+          "joining_fields": [
+            "staff_id"
+          ]
+        }
+      ],
+      "distance": 3,
+      "impact_level": "Low"
+    },
+    {
+      "dataset": "patient_lab_results",
+      "path": [
+        "patient_demographics",
+        "patient_medical_records",
+        "patient_lab_results"
+      ],
+      "edges": [
+        {
+          "source": "patient_demographics",
+          "target": "patient_medical_records",
+          "relationship": "primary",
+          "joining_fields": [
+            "patient_id",
+            "nhs_number"
+          ]
+        },
+        {
+          "source": "patient_medical_records",
+          "target": "patient_lab_results",
+          "relationship": "primary",
+          "joining_fields": [
+            "record_id"
+          ]
+        }
+      ],
+      "distance": 2,
+      "impact_level": "Medium"
+    },
+    {
+      "dataset": "patient_consent_records",
+      "path": [
+        "patient_demographics",
+        "patient_consent_records"
+      ],
+      "edges": [
+        {
+          "source": "patient_demographics",
+          "target": "patient_consent_records",
+          "relationship": "primary",
+          "joining_fields": [
+            "patient_id",
+            "nhs_number"
+          ]
+        }
+      ],
+      "distance": 1,
+      "impact_level": "High"
+    }
+  ],
+  "upstream_datasets": [
+    {
+      "dataset": "patient_medical_records",
+      "path": [
+        "patient_medical_records",
+        "patient_lab_results",
+        "patient_demographics"
+      ],
+      "edges": [
+        {
+          "source": "patient_medical_records",
+          "target": "patient_lab_results",
+          "relationship": "primary",
+          "joining_fields": [
+            "record_id"
+          ]
+        },
+        {
+          "source": "patient_lab_results",
+          "target": "patient_demographics",
+          "relationship": "referenced_by",
+          "joining_fields": [
+            "nhs_number",
+            "patient_id"
+          ]
+        }
+      ],
+      "distance": 2,
+      "dependency_level": "Medium"
+    },
+    {
+      "dataset": "nhs_staff_records",
+      "path": [
+        "nhs_staff_records",
+        "data_access_audit_logs",
+        "patient_demographics"
+      ],
+      "edges": [
+        {
+          "source": "nhs_staff_records",
+          "target": "data_access_audit_logs",
+          "relationship": "referenced_by",
+          "joining_fields": [
+            "staff_id"
+          ]
+        },
+        {
+          "source": "data_access_audit_logs",
+          "target": "patient_demographics",
+          "relationship": "referenced_by",
+          "joining_fields": [
+            "nhs_number"
+          ]
+        }
+      ],
+      "distance": 2,
+      "dependency_level": "Medium"
+    },
+    {
+      "dataset": "data_access_audit_logs",
+      "path": [
+        "data_access_audit_logs",
+        "nhs_staff_records",
+        "patient_demographics"
+      ],
+      "edges": [
+        {
+          "source": "data_access_audit_logs",
+          "target": "nhs_staff_records",
+          "relationship": "primary",
+          "joining_fields": [
+            "staff_id"
+          ]
+        },
+        {
+          "source": "nhs_staff_records",
+          "target": "patient_demographics",
+          "relationship": "referenced_by",
+          "joining_fields": [
+            "last_name",
+            "first_name"
+          ]
+        }
+      ],
+      "distance": 2,
+      "dependency_level": "Medium"
+    },
+    {
+      "dataset": "patient_lab_results",
+      "path": [
+        "patient_lab_results",
+        "patient_demographics"
+      ],
+      "edges": [
+        {
+          "source": "patient_lab_results",
+          "target": "patient_demographics",
+          "relationship": "referenced_by",
+          "joining_fields": [
+            "nhs_number",
+            "patient_id"
+          ]
+        }
+      ],
+      "distance": 1,
+      "dependency_level": "High"
+    },
+    {
+      "dataset": "patient_consent_records",
+      "path": [
+        "patient_consent_records",
+        "patient_demographics"
+      ],
+      "edges": [
+        {
+          "source": "patient_consent_records",
+          "target": "patient_demographics",
+          "relationship": "primary",
+          "joining_fields": [
+            "nhs_number",
+            "patient_id"
+          ]
+        }
+      ],
+      "distance": 1,
+      "dependency_level": "High"
+    }
+  ],
+  "impact_summary": {
+    "high_impact": 2,
+    "medium_impact": 2,
+    "low_impact": 1
+  },
+  "critical_path": [
+    {
+      "dataset": "patient_medical_records",
+      "impact_level": "High",
+      "dependencies": 4
+    },
+    {
+      "dataset": "patient_consent_records",
+      "impact_level": "High",
+      "dependencies": 1
+    }
+  ]
+}

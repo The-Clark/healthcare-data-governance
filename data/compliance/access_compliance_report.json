@@ -1,0 +1,194 @@
+{
+  "report_id": "5eda2854-fa69-49da-8e86-ffe4f9112c4f",
+  "report_date": "2025-04-29 01:11:59",
+  "file_analyzed": "data_access_audit_logs.csv",
+  "total_access_records": 300,
+  "authorized_count": 278,
+  "unauthorized_count": 22,
+  "unauthorized_rate": 7.333333333333333,
+  "unauthorized_details": [
+    {
+      "staff_name": "Alexandra Bibi",
+      "unauthorized_count": 4
+    },
+    {
+      "staff_name": "Dominic Bond",
+      "unauthorized_count": 3
+    },
+    {
+      "staff_name": "Nicole Ford",
+      "unauthorized_count": 3
+    },
+    {
+      "staff_name": "Terence Hopkins",
+      "unauthorized_count": 3
+    },
+    {
+      "staff_name": "Christopher Kelly",
+      "unauthorized_count": 2
+    },
+    {
+      "staff_name": "Connor Fry",
+      "unauthorized_count": 2
+    },
+    {
+      "staff_name": "Scott Mitchell",
+      "unauthorized_count": 2
+    },
+    {
+      "staff_name": "Alison Baker",
+      "unauthorized_count": 1
+    },
+    {
+      "staff_name": "Marilyn Gray",
+      "unauthorized_count": 1
+    },
+    {
+      "staff_name": "Scott Morris",
+      "unauthorized_count": 1
+    }
+  ],
+  "late_hour_access_count": 82,
+  "late_hour_access_rate": 27.333333333333332,
+  "access_by_action": [
+    {
+      "action": "View Patient Record",
+      "count": 40
+    },
+    {
+      "action": "View Test Results",
+      "count": 40
+    },
+    {
+      "action": "Prescribe Medication",
+      "count": 36
+    },
+    {
+      "action": "Schedule Appointment",
+      "count": 35
+    },
+    {
+      "action": "Update Patient Demographics",
+      "count": 35
+    },
+    {
+      "action": "Add Medical Notes",
+      "count": 33
+    },
+    {
+      "action": "Cancel Appointment",
+      "count": 29
+    },
+    {
+      "action": "Download Medical History",
+      "count": 26
+    },
+    {
+      "action": "Edit Patient Consent",
+      "count": 26
+    }
+  ],
+  "access_by_hour": [
+    {
+      "hour": 0,
+      "count": 9
+    },
+    {
+      "hour": 1,
+      "count": 6
+    },
+    {
+      "hour": 2,
+      "count": 11
+    },
+    {
+      "hour": 3,
+      "count": 22
+    },
+    {
+      "hour": 4,
+      "count": 13
+    },
+    {
+      "hour": 5,
+      "count": 16
+    },
+    {
+      "hour": 6,
+      "count": 11
+    },
+    {
+      "hour": 7,
+      "count": 14
+    },
+    {
+      "hour": 8,
+      "count": 16
+    },
+    {
+      "hour": 9,
+      "count": 13
+    },
+    {
+      "hour": 10,
+      "count": 6
+    },
+    {
+      "hour": 11,
+      "count": 19
+    },
+    {
+      "hour": 12,
+      "count": 9
+    },
+    {
+      "hour": 13,
+      "count": 17
+    },
+    {
+      "hour": 14,
+      "count": 11
+    },
+    {
+      "hour": 15,
+      "count": 11
+    },
+    {
+      "hour": 16,
+      "count": 17
+    },
+    {
+      "hour": 17,
+      "count": 15
+    },
+    {
+      "hour": 18,
+      "count": 8
+    },
+    {
+      "hour": 19,
+      "count": 12
+    },
+    {
+      "hour": 20,
+      "count": 12
+    },
+    {
+      "hour": 21,
+      "count": 11
+    },
+    {
+      "hour": 22,
+      "count": 11
+    },
+    {
+      "hour": 23,
+      "count": 10
+    }
+  ],
+  "compliance_status": "Non-Compliant",
+  "recommendations": [
+    "Investigate 22 unauthorized access attempts and implement stricter access controls.",
+    "Review 82 access attempts during late hours (10 PM - 5 AM) to ensure they are legitimate."
+  ]
+}

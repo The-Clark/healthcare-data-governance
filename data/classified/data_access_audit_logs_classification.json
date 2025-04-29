@@ -1,0 +1,159 @@
+{
+  "file_name": "data_access_audit_logs.csv",
+  "record_count": 300,
+  "column_count": 13,
+  "classified_at": "2025-04-29 01:34:15",
+  "classification_id": "078688dd-6220-4d2e-a468-b06fbbbff685",
+  "columns": [
+    {
+      "column_name": "log_id",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": true,
+      "pii_types": [
+        "nhs_number"
+      ],
+      "classification": "CONFIDENTIAL",
+      "risk_score": 2,
+      "handling_requirements": "Access restricted to authorized personnel with legitimate need"
+    },
+    {
+      "column_name": "timestamp",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": true,
+      "pii_types": [
+        "date"
+      ],
+      "classification": "CONFIDENTIAL",
+      "risk_score": 2,
+      "handling_requirements": "Access restricted to authorized personnel with legitimate need"
+    },
+    {
+      "column_name": "staff_id",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": false,
+      "pii_types": [],
+      "classification": "INTERNAL",
+      "risk_score": 1,
+      "handling_requirements": "Can be shared with NHS staff but not externally"
+    },
+    {
+      "column_name": "staff_name",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": false,
+      "pii_types": [],
+      "classification": "PUBLIC",
+      "risk_score": 0,
+      "handling_requirements": "No special handling required"
+    },
+    {
+      "column_name": "action",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": false,
+      "pii_types": [],
+      "classification": "PUBLIC",
+      "risk_score": 0,
+      "handling_requirements": "No special handling required"
+    },
+    {
+      "column_name": "resource_type",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": false,
+      "pii_types": [],
+      "classification": "PUBLIC",
+      "risk_score": 0,
+      "handling_requirements": "No special handling required"
+    },
+    {
+      "column_name": "resource_id",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": true,
+      "pii_types": [
+        "nhs_number"
+      ],
+      "classification": "CONFIDENTIAL",
+      "risk_score": 2,
+      "handling_requirements": "Access restricted to authorized personnel with legitimate need"
+    },
+    {
+      "column_name": "nhs_number",
+      "is_pii": true,
+      "is_clinical": false,
+      "contains_pii": true,
+      "pii_types": [
+        "nhs_number"
+      ],
+      "classification": "RESTRICTED",
+      "risk_score": 3,
+      "handling_requirements": "Strict access controls, encryption required, audit logging mandatory"
+    },
+    {
+      "column_name": "ip_address",
+      "is_pii": true,
+      "is_clinical": false,
+      "contains_pii": false,
+      "pii_types": [],
+      "classification": "CONFIDENTIAL",
+      "risk_score": 2,
+      "handling_requirements": "Access restricted to authorized personnel with legitimate need"
+    },
+    {
+      "column_name": "system",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": false,
+      "pii_types": [],
+      "classification": "PUBLIC",
+      "risk_score": 0,
+      "handling_requirements": "No special handling required"
+    },
+    {
+      "column_name": "authorized",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": false,
+      "pii_types": [],
+      "classification": "PUBLIC",
+      "risk_score": 0,
+      "handling_requirements": "No special handling required"
+    },
+    {
+      "column_name": "access_reason",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": false,
+      "pii_types": [],
+      "classification": "PUBLIC",
+      "risk_score": 0,
+      "handling_requirements": "No special handling required"
+    },
+    {
+      "column_name": "created_at",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": true,
+      "pii_types": [
+        "date"
+      ],
+      "classification": "CONFIDENTIAL",
+      "risk_score": 2,
+      "handling_requirements": "Access restricted to authorized personnel with legitimate need"
+    }
+  ],
+  "overall_classification": "RESTRICTED",
+  "overall_risk_score": 3,
+  "handling_requirements": "Strict access controls, encryption required, audit logging mandatory",
+  "classification_counts": {
+    "CONFIDENTIAL": 5,
+    "INTERNAL": 1,
+    "PUBLIC": 6,
+    "RESTRICTED": 1
+  },
+  "pii_density": 46.15384615384615
+}

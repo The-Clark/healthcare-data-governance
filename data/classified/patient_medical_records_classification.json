@@ -1,0 +1,183 @@
+{
+  "file_name": "patient_medical_records.csv",
+  "record_count": 281,
+  "column_count": 15,
+  "classified_at": "2025-04-29 01:34:15",
+  "classification_id": "14ac7722-ad90-4373-8c2f-df3089910c7c",
+  "columns": [
+    {
+      "column_name": "record_id",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": true,
+      "pii_types": [
+        "nhs_number"
+      ],
+      "classification": "CONFIDENTIAL",
+      "risk_score": 2,
+      "handling_requirements": "Access restricted to authorized personnel with legitimate need"
+    },
+    {
+      "column_name": "patient_id",
+      "is_pii": true,
+      "is_clinical": false,
+      "contains_pii": true,
+      "pii_types": [
+        "nhs_number"
+      ],
+      "classification": "RESTRICTED",
+      "risk_score": 3,
+      "handling_requirements": "Strict access controls, encryption required, audit logging mandatory"
+    },
+    {
+      "column_name": "nhs_number",
+      "is_pii": true,
+      "is_clinical": false,
+      "contains_pii": true,
+      "pii_types": [
+        "nhs_number"
+      ],
+      "classification": "RESTRICTED",
+      "risk_score": 3,
+      "handling_requirements": "Strict access controls, encryption required, audit logging mandatory"
+    },
+    {
+      "column_name": "visit_date",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": true,
+      "pii_types": [
+        "date"
+      ],
+      "classification": "CONFIDENTIAL",
+      "risk_score": 2,
+      "handling_requirements": "Access restricted to authorized personnel with legitimate need"
+    },
+    {
+      "column_name": "trust_name",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": false,
+      "pii_types": [],
+      "classification": "INTERNAL",
+      "risk_score": 1,
+      "handling_requirements": "Can be shared with NHS staff but not externally"
+    },
+    {
+      "column_name": "department",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": false,
+      "pii_types": [],
+      "classification": "INTERNAL",
+      "risk_score": 1,
+      "handling_requirements": "Can be shared with NHS staff but not externally"
+    },
+    {
+      "column_name": "primary_diagnosis",
+      "is_pii": false,
+      "is_clinical": true,
+      "contains_pii": false,
+      "pii_types": [],
+      "classification": "RESTRICTED",
+      "risk_score": 3,
+      "handling_requirements": "Strict access controls, encryption required, audit logging mandatory"
+    },
+    {
+      "column_name": "secondary_diagnosis",
+      "is_pii": false,
+      "is_clinical": true,
+      "contains_pii": false,
+      "pii_types": [],
+      "classification": "RESTRICTED",
+      "risk_score": 3,
+      "handling_requirements": "Strict access controls, encryption required, audit logging mandatory"
+    },
+    {
+      "column_name": "notes",
+      "is_pii": false,
+      "is_clinical": true,
+      "contains_pii": false,
+      "pii_types": [],
+      "classification": "RESTRICTED",
+      "risk_score": 3,
+      "handling_requirements": "Strict access controls, encryption required, audit logging mandatory"
+    },
+    {
+      "column_name": "attending_physician",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": false,
+      "pii_types": [],
+      "classification": "PUBLIC",
+      "risk_score": 0,
+      "handling_requirements": "No special handling required"
+    },
+    {
+      "column_name": "medication_prescribed",
+      "is_pii": false,
+      "is_clinical": true,
+      "contains_pii": false,
+      "pii_types": [],
+      "classification": "RESTRICTED",
+      "risk_score": 3,
+      "handling_requirements": "Strict access controls, encryption required, audit logging mandatory"
+    },
+    {
+      "column_name": "follow_up_required",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": false,
+      "pii_types": [],
+      "classification": "PUBLIC",
+      "risk_score": 0,
+      "handling_requirements": "No special handling required"
+    },
+    {
+      "column_name": "follow_up_date",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": true,
+      "pii_types": [
+        "date"
+      ],
+      "classification": "CONFIDENTIAL",
+      "risk_score": 2,
+      "handling_requirements": "Access restricted to authorized personnel with legitimate need"
+    },
+    {
+      "column_name": "created_at",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": true,
+      "pii_types": [
+        "date"
+      ],
+      "classification": "CONFIDENTIAL",
+      "risk_score": 2,
+      "handling_requirements": "Access restricted to authorized personnel with legitimate need"
+    },
+    {
+      "column_name": "updated_at",
+      "is_pii": false,
+      "is_clinical": false,
+      "contains_pii": true,
+      "pii_types": [
+        "date"
+      ],
+      "classification": "CONFIDENTIAL",
+      "risk_score": 2,
+      "handling_requirements": "Access restricted to authorized personnel with legitimate need"
+    }
+  ],
+  "overall_classification": "RESTRICTED",
+  "overall_risk_score": 3,
+  "handling_requirements": "Strict access controls, encryption required, audit logging mandatory",
+  "classification_counts": {
+    "CONFIDENTIAL": 5,
+    "RESTRICTED": 6,
+    "INTERNAL": 2,
+    "PUBLIC": 2
+  },
+  "pii_density": 46.666666666666664
+}

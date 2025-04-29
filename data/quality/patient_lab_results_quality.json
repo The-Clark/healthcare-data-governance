@@ -1,0 +1,339 @@
+{
+  "file_name": "patient_lab_results.csv",
+  "validation_id": "1d71dda4-d390-470c-af67-79c604eded0e",
+  "validated_at": "2025-04-29 01:34:11",
+  "record_count": 398,
+  "column_count": 12,
+  "columns_validated": 9,
+  "column_results": [
+    {
+      "column": "created_at",
+      "rules_tested": [
+        "not_null",
+        "match_strftime_format"
+      ],
+      "rules_passed": [
+        "not_null",
+        "match_strftime_format"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "updated_at",
+      "rules_tested": [
+        "match_strftime_format"
+      ],
+      "rules_passed": [
+        "match_strftime_format"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "result_id",
+      "rules_tested": [
+        "not_null",
+        "unique"
+      ],
+      "rules_passed": [
+        "not_null",
+        "unique"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "record_id",
+      "rules_tested": [
+        "not_null"
+      ],
+      "rules_passed": [
+        "not_null"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "patient_id",
+      "rules_tested": [
+        "not_null"
+      ],
+      "rules_passed": [
+        "not_null"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "nhs_number",
+      "rules_tested": [
+        "not_null",
+        "match_regex"
+      ],
+      "rules_passed": [
+        "not_null",
+        "match_regex"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "test_type",
+      "rules_tested": [
+        "not_null"
+      ],
+      "rules_passed": [
+        "not_null"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "test_date",
+      "rules_tested": [
+        "not_null",
+        "match_strftime_format"
+      ],
+      "rules_passed": [
+        "not_null",
+        "match_strftime_format"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "result",
+      "rules_tested": [
+        "not_null"
+      ],
+      "rules_passed": [
+        "not_null"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    }
+  ],
+  "data_profile": {
+    "file_name": "patient_lab_results.csv",
+    "record_count": 398,
+    "column_count": 12,
+    "profiled_at": "2025-04-29 01:34:11",
+    "profile_id": "01d30803-5321-45c2-adb9-bf72cc21febb",
+    "columns": {
+      "result_id": {
+        "data_type": "object",
+        "count": 398,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 398,
+        "unique_percentage": 100.0,
+        "min_length": 36,
+        "max_length": 36,
+        "mean_length": 36.0,
+        "frequent_values": {
+          "2eceafef-6623-44cc-be21-29378bbaaa5e": 1,
+          "fa7106f3-2595-4e67-80fb-a973707e2882": 1,
+          "550403d7-b1bd-4a24-bb88-02c80db41b55": 1,
+          "f78924d5-ac5b-45af-8730-18bd05b2dc15": 1,
+          "1c063ce8-82fc-4b92-922b-8c42d8c809af": 1
+        }
+      },
+      "record_id": {
+        "data_type": "object",
+        "count": 398,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 195,
+        "unique_percentage": 48.99497487437186,
+        "min_length": 36,
+        "max_length": 36,
+        "mean_length": 36.0,
+        "frequent_values": {
+          "ea26372a-c6d8-4c3d-8e1c-81224fe98058": 3,
+          "1c1d62a3-01ef-4fdb-8b44-7b8955249561": 3,
+          "a6a54999-8c7b-48cc-ab8b-521091642011": 3,
+          "54b70b49-a7f1-40b9-9744-32fbdbf7c972": 3,
+          "8ab584a3-34ba-412d-8cf5-e496cfd8041a": 3
+        }
+      },
+      "patient_id": {
+        "data_type": "object",
+        "count": 398,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 86,
+        "unique_percentage": 21.608040201005025,
+        "min_length": 36,
+        "max_length": 36,
+        "mean_length": 36.0,
+        "frequent_values": {
+          "60e9a05f-9d30-47a0-9bed-176bf9265115": 12,
+          "950b6947-156c-4903-a164-af2c1cc8aa67": 11,
+          "7c31e23d-eae7-4885-a5cd-48145bbb6169": 11,
+          "6d467504-38d3-406c-830c-5fdd2f228477": 11,
+          "fe4f76aa-3b02-49d2-b903-78c0b3c6747b": 10
+        }
+      },
+      "nhs_number": {
+        "data_type": "object",
+        "count": 398,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 86,
+        "unique_percentage": 21.608040201005025,
+        "min_length": 12,
+        "max_length": 12,
+        "mean_length": 12.0,
+        "frequent_values": {
+          "494-598-9546": 12,
+          "954-471-9239": 11,
+          "449-700-1006": 11,
+          "953-134-5808": 11,
+          "834-230-8095": 10
+        }
+      },
+      "test_type": {
+        "data_type": "object",
+        "count": 398,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 8,
+        "unique_percentage": 2.0100502512562812,
+        "min_length": 5,
+        "max_length": 29,
+        "mean_length": 14.469849246231156,
+        "frequent_values": {
+          "Comprehensive Metabolic Panel": 60,
+          "Blood Culture": 57,
+          "Lipid Panel": 55,
+          "COVID-19 PCR": 53,
+          "Urinalysis": 47
+        }
+      },
+      "test_date": {
+        "data_type": "object",
+        "count": 398,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 182,
+        "unique_percentage": 45.7286432160804,
+        "min_length": 10,
+        "max_length": 10,
+        "mean_length": 10.0,
+        "frequent_values": {
+          "2023-09-29": 6,
+          "2022-11-20": 5,
+          "2023-04-27": 5,
+          "2024-03-21": 5,
+          "2022-11-19": 5
+        }
+      },
+      "result": {
+        "data_type": "object",
+        "count": 398,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 398,
+        "unique_percentage": 100.0,
+        "min_length": 59,
+        "max_length": 124,
+        "mean_length": 73.70100502512562,
+        "frequent_values": {
+          "{\"value\": \"0.5\", \"unit\": \"%\", \"reference_range\": \"2.0-10.4\"}": 1,
+          "{\"value\": \"5.2\", \"unit\": \"mmol/L\", \"reference_range\": \"2.3-7.2\"}": 1,
+          "{\"value\": \"9.5\", \"unit\": \"U/L\", \"reference_range\": \"3.7-8.8\"}": 1,
+          "{\"value\": \"5.4\", \"unit\": \"mg/dL\", \"reference_range\": \"2.2-12.1\"}": 1,
+          "{\"value\": \"4.6\", \"unit\": \"U/L\", \"reference_range\": \"4.9-6.1\"}": 1
+        }
+      },
+      "abnormal_flag": {
+        "data_type": "bool",
+        "count": 398,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 2,
+        "unique_percentage": 0.5025125628140703
+      },
+      "ordering_physician": {
+        "data_type": "object",
+        "count": 398,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 195,
+        "unique_percentage": 48.99497487437186,
+        "min_length": 11,
+        "max_length": 29,
+        "mean_length": 17.600502512562816,
+        "frequent_values": {
+          "Chloe Burton MD": 3,
+          "Dr Bethan Watson MD": 3,
+          "Dr Nicole Browne MD": 3,
+          "Clive Cook MD": 3,
+          "Jasmine Reynolds MD": 3
+        }
+      },
+      "lab_name": {
+        "data_type": "object",
+        "count": 398,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 4,
+        "unique_percentage": 1.0050251256281406,
+        "min_length": 25,
+        "max_length": 30,
+        "mean_length": 27.201005025125628,
+        "frequent_values": {
+          "General Hospital Laboratory": 113,
+          "Royal Hospital Laboratory": 98,
+          "Central Hospital Laboratory": 95,
+          "University Hospital Laboratory": 92
+        }
+      },
+      "created_at": {
+        "data_type": "object",
+        "count": 398,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 1,
+        "unique_percentage": 0.25125628140703515,
+        "min_length": 19,
+        "max_length": 19,
+        "mean_length": 19.0,
+        "frequent_values": {
+          "2025-04-29 00:50:57": 398
+        }
+      },
+      "updated_at": {
+        "data_type": "object",
+        "count": 398,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 1,
+        "unique_percentage": 0.25125628140703515,
+        "min_length": 19,
+        "max_length": 19,
+        "mean_length": 19.0,
+        "frequent_values": {
+          "2025-04-29 00:50:57": 398
+        }
+      }
+    }
+  },
+  "quality_score": {
+    "overall_score": 100.0,
+    "dimension_scores": {
+      "completeness": 100.0,
+      "validity": 100.0,
+      "uniqueness": 100.0,
+      "consistency": null
+    },
+    "score_interpretation": "Excellent - Data meets the highest quality standards",
+    "weighted_dimensions": {
+      "completeness": 0.4,
+      "validity": 0.3,
+      "uniqueness": 0.15,
+      "consistency": 0.15
+    }
+  }
+}

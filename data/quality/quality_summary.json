@@ -1,0 +1,68 @@
+{
+  "total_datasets": 6,
+  "validation_date": "2025-04-29 01:34:11",
+  "datasets": {
+    "nhs_staff_records.csv": {
+      "overall_score": 100.0,
+      "interpretation": "Excellent - Data meets the highest quality standards",
+      "dimension_scores": {
+        "completeness": 100.0,
+        "validity": 100.0,
+        "uniqueness": 100.0,
+        "consistency": null
+      }
+    },
+    "patient_consent_records.csv": {
+      "overall_score": 100.0,
+      "interpretation": "Excellent - Data meets the highest quality standards",
+      "dimension_scores": {
+        "completeness": 100.0,
+        "validity": 100.0,
+        "uniqueness": 100.0,
+        "consistency": null
+      }
+    },
+    "data_access_audit_logs.csv": {
+      "overall_score": 100.0,
+      "interpretation": "Excellent - Data meets the highest quality standards",
+      "dimension_scores": {
+        "completeness": 100.0,
+        "validity": 100.0,
+        "uniqueness": 100.0,
+        "consistency": null
+      }
+    },
+    "patient_demographics.csv": {
+      "overall_score": 100.0,
+      "interpretation": "Excellent - Data meets the highest quality standards",
+      "dimension_scores": {
+        "completeness": 100.0,
+        "validity": 100.0,
+        "uniqueness": 100.0,
+        "consistency": 100.0
+      }
+    },
+    "patient_medical_records.csv": {
+      "overall_score": 94.77124183006536,
+      "interpretation": "Good - Data is reliable with minor quality issues",
+      "dimension_scores": {
+        "completeness": 88.88888888888889,
+        "validity": 100.0,
+        "uniqueness": 100.0,
+        "consistency": null
+      }
+    },
+    "patient_lab_results.csv": {
+      "overall_score": 100.0,
+      "interpretation": "Excellent - Data meets the highest quality standards",
+      "dimension_scores": {
+        "completeness": 100.0,
+        "validity": 100.0,
+        "uniqueness": 100.0,
+        "consistency": null
+      }
+    }
+  },
+  "average_quality_score": 99.1285403050109,
+  "overall_interpretation": "Excellent - Data meets the highest quality standards"
+}

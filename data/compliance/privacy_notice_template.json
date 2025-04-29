@@ -1,0 +1,52 @@
+{
+  "notice_id": "691b1c50-052b-477d-96d9-24c28315f80b",
+  "created_date": "2025-04-29 01:11:59",
+  "version": "1.0",
+  "organization": "NHS Healthcare Provider",
+  "sections": {
+    "introduction": {
+      "title": "Introduction",
+      "content": "\n                    This Privacy Notice explains how we use your personal information, how it is collected, \n                    how it is held, and how it is processed. It also explains your rights under the law relating \n                    to your personal information. This Privacy Notice is provided in accordance with the UK General \n                    Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.\n                    "
+    },
+    "data_controller": {
+      "title": "Who is the Data Controller?",
+      "content": "\n                    The [NHS Organisation Name] is the Data Controller for the personal information you provide.\n                    Our Data Protection Officer can be contacted at: [DPO Contact Details].\n                    "
+    },
+    "personal_information": {
+      "title": "What Personal Information Do We Collect?",
+      "content": "\n                    We collect and process the following types of personal information:\n                    \n                    \u2022 Personal identifiers (name, NHS number, address, date of birth, etc.)\n                    \u2022 Contact information (address, email, telephone number)\n                    \u2022 Medical information (medical history, diagnoses, treatments, medications)\n                    \u2022 Test results and medical reports\n                    \u2022 Information about your appointments and visits\n                    \u2022 Relevant information from other health professionals\n                    \u2022 Information from your GP\n                    \u2022 Photographs, video, audio recordings\n                    \u2022 CCTV footage if you visit our premises\n                    "
+    },
+    "special_categories": {
+      "title": "Special Categories of Personal Information",
+      "content": "\n                    We also collect and process special categories of personal information that may include:\n                    \n                    \u2022 Details about your physical and mental health\n                    \u2022 Genetic data and biometric data where processed to uniquely identify you\n                    \u2022 Information about your race, ethnicity, sexual orientation, and religion\n                    \u2022 Information about disabilities or other health conditions\n                    "
+    },
+    "how_we_collect": {
+      "title": "How We Collect Your Personal Information",
+      "content": "\n                    We collect personal information about you from the following sources:\n                    \n                    \u2022 Directly from you when you register with us, attend appointments, or contact us\n                    \u2022 From your GP and other healthcare providers\n                    \u2022 From third parties who are involved in your care\n                    \u2022 From monitoring devices and medical equipment\n                    "
+    },
+    "how_we_use": {
+      "title": "How We Use Your Personal Information",
+      "content": "\n                    We use your personal information to:\n                    \n                    \u2022 Provide you with healthcare and treatment\n                    \u2022 Ensure that we can contact you about your appointments\n                    \u2022 Keep track of your treatment and monitor your health outcomes\n                    \u2022 Review the care we provide to ensure it is of the highest standard\n                    \u2022 Investigate complaints, legal claims, or adverse incidents\n                    \u2022 Ensure our services can meet future needs\n                    \u2022 Train and educate healthcare professionals\n                    \u2022 Conduct research and development (with your consent where required)\n                    \u2022 Prepare statistics on NHS performance\n                    \u2022 Audit NHS services\n                    "
+    },
+    "legal_basis": {
+      "title": "Legal Basis for Processing",
+      "content": "\n                    We process your personal information under the following legal bases:\n                    \n                    \u2022 Article 6(1)(e) - Processing is necessary for the performance of a task carried out in the public interest\n                    \u2022 Article 9(2)(h) - Processing is necessary for medical diagnosis, the provision of health treatment and management of healthcare systems\n                    \n                    For some activities, we rely on other legal bases, such as:\n                    \n                    \u2022 Article 6(1)(c) - Processing is necessary for compliance with a legal obligation\n                    \u2022 Article 6(1)(d) - Processing is necessary to protect vital interests\n                    \u2022 Article 6(1)(a) - You have given consent\n                    \n                    For special category data (such as health data), we also rely on:\n                    \n                    \u2022 Article 9(2)(h) - Processing for healthcare purposes\n                    \u2022 Article 9(2)(i) - Processing for public health\n                    \u2022 Article 9(2)(j) - Processing for archiving, research and statistics\n                    \u2022 Article 9(2)(a) - Explicit consent, where required\n                    "
+    },
+    "sharing": {
+      "title": "Sharing Your Personal Information",
+      "content": "\n                    We may share your personal information with:\n                    \n                    \u2022 Other NHS organizations involved in your care\n                    \u2022 Other healthcare providers (GPs, ambulance services, etc.)\n                    \u2022 Social services and local authorities\n                    \u2022 Education services\n                    \u2022 Research organizations (with appropriate safeguards)\n                    \u2022 Regulatory bodies such as the Care Quality Commission\n                    \n                    We will not share your information for marketing, insurance, or commercial purposes without your explicit consent.\n                    "
+    },
+    "retention": {
+      "title": "How Long We Keep Your Personal Information",
+      "content": "\n                    We keep your personal information in accordance with the NHS Records Management Code of Practice, which sets out how long we should keep different types of information.\n                    \n                    Generally, health records are kept for:\n                    \n                    \u2022 Adult health records: 8 years after last treatment\n                    \u2022 Children's health records: Until the child is 25 (or 26 if they were 17 at conclusion of treatment)\n                    \u2022 Maternity records: 25 years after the birth\n                    \u2022 Mental health records: 20 years after no further treatment\n                    "
+    },
+    "your_rights": {
+      "title": "Your Rights",
+      "content": "\n                    Under data protection law, you have rights including:\n                    \n                    \u2022 Your right of access - You have the right to ask us for copies of your personal information.\n                    \u2022 Your right to rectification - You have the right to ask us to rectify information you think is inaccurate or incomplete.\n                    \u2022 Your right to erasure - You have the right to ask us to erase your personal information in certain circumstances.\n                    \u2022 Your right to restriction of processing - You have the right to ask us to restrict the processing of your information in certain circumstances.\n                    \u2022 Your right to object to processing - You have the right to object to the processing of your personal data in certain circumstances.\n                    \u2022 Your right to data portability - You have the right to ask that we transfer the information you gave us to another organization, or to you, in certain circumstances.\n                    \n                    You are not required to pay any charge for exercising your rights. If you make a request, we have one month to respond to you.\n                    "
+    },
+    "contact": {
+      "title": "How to Contact Us",
+      "content": "\n                    To exercise any of your rights or if you have any questions about this Privacy Notice, please contact:\n                    \n                    [Data Protection Officer Contact Details]\n                    \n                    If you are unhappy with how we have used your data, you can complain to the Information Commissioner's Office:\n                    \n                    Information Commissioner's Office\n                    Wycliffe House, Water Lane, Wilmslow, Cheshire, SK9 5AF\n                    Helpline number: 0303 123 1113\n                    ICO website: https://www.ico.org.uk\n                    "
+    }
+  }
+}

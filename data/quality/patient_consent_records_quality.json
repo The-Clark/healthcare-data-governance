@@ -1,0 +1,301 @@
+{
+  "file_name": "patient_consent_records.csv",
+  "validation_id": "e9cc91c4-a704-454a-b833-8865f2d4671b",
+  "validated_at": "2025-04-29 01:34:11",
+  "record_count": 500,
+  "column_count": 10,
+  "columns_validated": 8,
+  "column_results": [
+    {
+      "column": "created_at",
+      "rules_tested": [
+        "not_null",
+        "match_strftime_format"
+      ],
+      "rules_passed": [
+        "not_null",
+        "match_strftime_format"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "updated_at",
+      "rules_tested": [
+        "match_strftime_format"
+      ],
+      "rules_passed": [
+        "match_strftime_format"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "consent_id",
+      "rules_tested": [
+        "not_null",
+        "unique"
+      ],
+      "rules_passed": [
+        "not_null",
+        "unique"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "patient_id",
+      "rules_tested": [
+        "not_null"
+      ],
+      "rules_passed": [
+        "not_null"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "nhs_number",
+      "rules_tested": [
+        "not_null",
+        "match_regex"
+      ],
+      "rules_passed": [
+        "not_null",
+        "match_regex"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "consent_type",
+      "rules_tested": [
+        "not_null"
+      ],
+      "rules_passed": [
+        "not_null"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "consent_given",
+      "rules_tested": [
+        "not_null"
+      ],
+      "rules_passed": [
+        "not_null"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    },
+    {
+      "column": "recorded_date",
+      "rules_tested": [
+        "not_null",
+        "match_strftime_format"
+      ],
+      "rules_passed": [
+        "not_null",
+        "match_strftime_format"
+      ],
+      "rules_failed": [],
+      "pass_percentage": 100.0
+    }
+  ],
+  "data_profile": {
+    "file_name": "patient_consent_records.csv",
+    "record_count": 500,
+    "column_count": 10,
+    "profiled_at": "2025-04-29 01:34:11",
+    "profile_id": "c8d5b4bc-fdc3-4db3-8b1b-c414a6805ee9",
+    "columns": {
+      "consent_id": {
+        "data_type": "object",
+        "count": 500,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 500,
+        "unique_percentage": 100.0,
+        "min_length": 36,
+        "max_length": 36,
+        "mean_length": 36.0,
+        "frequent_values": {
+          "09f8849b-e257-4d19-be12-5988e47d4e45": 1,
+          "c78f6086-7233-41c5-88a2-5e6c24100688": 1,
+          "6c63557d-074c-4e30-9c44-45533600d9c3": 1,
+          "8281cc32-51ac-4d90-b2b4-1a2ed9fcb40e": 1,
+          "b74cfe38-47d6-4d25-b797-c14a897dff2c": 1
+        }
+      },
+      "patient_id": {
+        "data_type": "object",
+        "count": 500,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 100,
+        "unique_percentage": 20.0,
+        "min_length": 36,
+        "max_length": 36,
+        "mean_length": 36.0,
+        "frequent_values": {
+          "f53f25d8-9e7a-4334-ad65-44efb2a5751f": 5,
+          "80bfe1b5-ed64-47d7-b045-f8ccb4a68f29": 5,
+          "3694622e-8c79-4578-9631-75cb32638b5c": 5,
+          "8ceea46a-0a22-4c19-b71d-faa807ef69b2": 5,
+          "150a1e8e-8810-49a2-95aa-7ad143242b63": 5
+        }
+      },
+      "nhs_number": {
+        "data_type": "object",
+        "count": 500,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 100,
+        "unique_percentage": 20.0,
+        "min_length": 12,
+        "max_length": 12,
+        "mean_length": 12.0,
+        "frequent_values": {
+          "624-584-5043": 5,
+          "471-844-7060": 5,
+          "438-717-5443": 5,
+          "941-612-6494": 5,
+          "429-196-5591": 5
+        }
+      },
+      "consent_type": {
+        "data_type": "object",
+        "count": 500,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 5,
+        "unique_percentage": 1.0,
+        "min_length": 26,
+        "max_length": 32,
+        "mean_length": 29.6,
+        "frequent_values": {
+          "Data Processing for Medical Care": 100,
+          "Share Data with Other NHS Trusts": 100,
+          "Research Use of Anonymized Data": 100,
+          "Contact for Clinical Trials": 100,
+          "Receive Health Newsletters": 100
+        }
+      },
+      "consent_given": {
+        "data_type": "bool",
+        "count": 500,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 2,
+        "unique_percentage": 0.4
+      },
+      "recorded_date": {
+        "data_type": "object",
+        "count": 500,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 275,
+        "unique_percentage": 55.00000000000001,
+        "min_length": 10,
+        "max_length": 10,
+        "mean_length": 10.0,
+        "frequent_values": {
+          "2024-10-23": 6,
+          "2024-08-12": 5,
+          "2024-06-15": 5,
+          "2024-05-07": 5,
+          "2025-01-07": 4
+        }
+      },
+      "recorded_by": {
+        "data_type": "object",
+        "count": 500,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 499,
+        "unique_percentage": 99.8,
+        "min_length": 7,
+        "max_length": 26,
+        "mean_length": 14.682,
+        "frequent_values": {
+          "Gillian Thomas": 2,
+          "Miss Joanne Lawson": 1,
+          "Geraldine Field": 1,
+          "Terry Brown": 1,
+          "Mr Scott Lewis": 1
+        }
+      },
+      "consent_expiry_date": {
+        "data_type": "object",
+        "count": 500,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 275,
+        "unique_percentage": 55.00000000000001,
+        "min_length": 10,
+        "max_length": 10,
+        "mean_length": 10.0,
+        "frequent_values": {
+          "2026-10-23": 6,
+          "2026-08-12": 5,
+          "2026-06-15": 5,
+          "2026-05-07": 5,
+          "2027-01-07": 4
+        }
+      },
+      "created_at": {
+        "data_type": "object",
+        "count": 500,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 275,
+        "unique_percentage": 55.00000000000001,
+        "min_length": 19,
+        "max_length": 19,
+        "mean_length": 19.0,
+        "frequent_values": {
+          "2024-10-23 00:00:00": 6,
+          "2024-08-12 00:00:00": 5,
+          "2024-06-15 00:00:00": 5,
+          "2024-05-07 00:00:00": 5,
+          "2025-01-07 00:00:00": 4
+        }
+      },
+      "updated_at": {
+        "data_type": "object",
+        "count": 500,
+        "null_count": 0,
+        "null_percentage": 0.0,
+        "unique_count": 275,
+        "unique_percentage": 55.00000000000001,
+        "min_length": 19,
+        "max_length": 19,
+        "mean_length": 19.0,
+        "frequent_values": {
+          "2024-10-23 00:00:00": 6,
+          "2024-08-12 00:00:00": 5,
+          "2024-06-15 00:00:00": 5,
+          "2024-05-07 00:00:00": 5,
+          "2025-01-07 00:00:00": 4
+        }
+      }
+    }
+  },
+  "quality_score": {
+    "overall_score": 100.0,
+    "dimension_scores": {
+      "completeness": 100.0,
+      "validity": 100.0,
+      "uniqueness": 100.0,
+      "consistency": null
+    },
+    "score_interpretation": "Excellent - Data meets the highest quality standards",
+    "weighted_dimensions": {
+      "completeness": 0.4,
+      "validity": 0.3,
+      "uniqueness": 0.15,
+      "consistency": 0.15
+    }
+  }
+}
